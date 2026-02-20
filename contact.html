@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Company Profile Kelompok | Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <span class="brand-badge"></span>
+        <span>Kelompok Praktikum Git & GitHub</span>
+      </a>
+      <nav id="menu" class="menu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Project</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h2>Hubungi Kami</h2>
+        <p class="lead">Isi form berikut untuk menghubungi tim. Ini hanya simulasi frontend.</p>
+        <div class="grid-2">
+          <div>
+            <form id="contact-form" novalidate>
+              <div class="form-row">
+                <div>
+                  <label>Nama</label>
+                  <input type="text" name="name" placeholder="Nama lengkap">
+                  <div class="error" data-error="name">Nama wajib diisi.</div>
+                </div>
+                <div>
+                  <label>Email</label>
+                  <input type="email" name="email" placeholder="email@contoh.com">
+                  <div class="error" data-error="email">Email tidak valid.</div>
+                </div>
+              </div>
+              <div>
+                <label>Pesan</label>
+                <textarea name="message" placeholder="Tulis pesan Anda"></textarea>
+                <div class="error" data-error="message">Pesan wajib diisi.</div>
+              </div>
+              <button class="btn btn-primary" type="submit">Kirim</button>
+            </form>
+          </div>
+          <div>
+            <h3>Kontak</h3>
+            <ul class="list">
+              <li>Email: kelompok@example.com</li>
+              <li>Instagram: @kelompok.git</li>
+              <li>Lokasi: Kampus Contoh, Indonesia</li>
+            </ul>
+            <div class="cards" style="margin-top:16px">
+              <article class="card">
+                <img src="assets/images/placeholder.svg" alt="Peta">
+                <div class="card-body">
+                  <h4 class="card-title">Peta Dummy</h4>
+                  <p class="card-sub">Ilustrasi lokasi kampus.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot">
+      <span>© <span id="year"></span> Kelompok Praktikum Git & GitHub</span>
+      <span>Dechellya • Fakhri • Faiz • Agil • Fauzan</span>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
